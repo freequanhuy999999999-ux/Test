@@ -23,6 +23,7 @@
             overflow: hidden;
         }
 
+        /* Khung màn hình dọc chuẩn mobile */
         .phone-container {
             width: 100vw;
             height: 100vh;
@@ -38,6 +39,7 @@
             overflow: hidden;
         }
 
+        /* Dòng chữ nhỏ trên cùng */
         .sub-title {
             font-size: 11px;
             color: #555;
@@ -48,6 +50,7 @@
             font-weight: 500;
         }
 
+        /* Tiêu đề chính */
         .main-title {
             font-size: 26px;
             font-weight: bold;
@@ -59,6 +62,7 @@
             min-height: 72px;
         }
 
+        /* Khu vực hiển thị nhãn dán */
         .sticker-container {
             width: 220px;
             height: 220px;
@@ -75,6 +79,7 @@
             border-radius: 15px;
         }
 
+        /* Khung chứa nút bấm */
         .btn-container {
             width: 100%;
             display: flex;
@@ -124,7 +129,7 @@
         <div class="main-title" id="main-text">Đừng giận anh<br>nữa nhé?</div>
 
         <div class="sticker-container">
-            <img id="sticker-img" src="bandau.jpg" alt="sticker">
+            <img id="sticker-img" src="https://i.postimg.cc/8P0jmn9k/anh-meme-xin-loi-6-2.jpg" alt="sticker">
         </div>
 
         <div class="btn-container">
@@ -150,19 +155,18 @@
 
             countNo++;
 
-            // Thay đổi đường dẫn gọi ảnh trực tiếp từ kho GitHub của bạn
             if (countNo === 1) {
                 mainText.innerHTML = "xin lỗi mà t bt sai rồi";
-                stickerImg.src = "lan1.jpg";
+                stickerImg.src = "https://i.postimg.cc/pL2TJMXQ/Screenshot-20260525-163429.jpg";
             } else if (countNo === 2) {
                 mainText.innerHTML = "không tha lỗi t sẽ buồn đó";
-                stickerImg.src = "lan2.jpg";
+                stickerImg.src = "https://i.postimg.cc/kgtjsz17/Screenshot-20260525-163311.jpg";
             } else if (countNo === 3) {
                 mainText.innerHTML = "xloi thật là mà phuong ơiiiiiiii";
-                stickerImg.src = "lan3.jpg";
+                stickerImg.src = "https://i.postimg.cc/htJYwfGk/Screenshot-20260525-163409.jpg";
             } else if (countNo === 4) {
                 mainText.innerHTML = "thật sự biết lỗi rồi mà";
-                stickerImg.src = "lan4.jpg";
+                stickerImg.src = "https://i.postimg.cc/h41RbzJs/Screenshot-20260525-163337.jpg";
             }
 
             if (countNo <= 4) {
@@ -189,8 +193,8 @@
             btnNo.style.display = 'none';
             subText.style.display = 'none';
 
-            // Gọi ảnh ôm nhau cuối cùng từ kho GitHub
-            stickerImg.src = "omnhau.webp";
+            // Đảm bảo link ảnh cuối dùng HTTPS sạch để không bị chặn bảo mật
+            stickerImg.src = "https://i.postimg.cc/CKT8gQFs/Sticker-muon-om-giup-tro-chuyen-them-am.webp";
 
             mainText.innerHTML = "iu thí =)))❤️";
             
